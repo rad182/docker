@@ -18,7 +18,10 @@ RUN apt-get -y install python-software-properties software-properties-common
 RUN apt-get -y install php5-fpm php5-mysql php-apc php5-cli php5-dev
 
 # Install Extra PHP Modules
-RUN apt-get -y install php5-curl php5-gd php-pear php5-mcrypt php5-mongo php5-memcached
+RUN apt-get -y install php5-curl php5-gd php-pear php5-mcrypt php5-mongo
+
+# Install Memcached
+RUN apt-get -y install memcached php5-memcached php5-memcache
 
 # Install Phalcon
 RUN apt-add-repository ppa:phalcon/stable -y

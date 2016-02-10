@@ -4,7 +4,7 @@ MAINTAINER Royce Dy <rady182@me.com>
 # Install Dependencies
 RUN apt-get update && \
     apt-get install -y \
-    libssl-dev libevent-dev libsqlite3-dev libcurl4-openssl-dev \
+    libssl-dev libevent-dev libsqlite3-dev libcurl4-openssl-dev uuid-dev \
     git && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
